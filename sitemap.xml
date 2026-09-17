@@ -6,11 +6,59 @@
     <lastmod>2026-09-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bds-technology.com/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://bds-technology.com/tr/"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://bds-technology.com/fa/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bds-technology.com/"/>
+  </url>
+  <url>
+    <loc>https://bds-technology.com/tr/</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bds-technology.com/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://bds-technology.com/tr/"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://bds-technology.com/fa/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bds-technology.com/"/>
+  </url>
+  <url>
+    <loc>https://bds-technology.com/fa/</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bds-technology.com/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://bds-technology.com/tr/"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://bds-technology.com/fa/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bds-technology.com/"/>
   </url>
   <url>
     <loc>https://bds-technology.com/power-factor.html</loc>
     <lastmod>2026-09-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bds-technology.com/power-factor.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://bds-technology.com/tr/power-factor.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://bds-technology.com/fa/power-factor.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bds-technology.com/power-factor.html"/>
+  </url>
+  <url>
+    <loc>https://bds-technology.com/tr/power-factor.html</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bds-technology.com/power-factor.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://bds-technology.com/tr/power-factor.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://bds-technology.com/fa/power-factor.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bds-technology.com/power-factor.html"/>
+  </url>
+  <url>
+    <loc>https://bds-technology.com/fa/power-factor.html</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://bds-technology.com/power-factor.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://bds-technology.com/tr/power-factor.html"/>
+    <xhtml:link rel="alternate" hreflang="fa" href="https://bds-technology.com/fa/power-factor.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://bds-technology.com/power-factor.html"/>
   </url>
 </urlset>
