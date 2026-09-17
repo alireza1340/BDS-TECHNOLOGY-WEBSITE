@@ -125,6 +125,9 @@ img{max-width:100%;display:block}
   white-space:nowrap;
 }
 .btn:active{transform:translateY(1px)}
+.sol-more{display:flex;justify-content:center;margin-top:56px}
+.btn-xl{font-size:18px;padding:20px 46px;border-radius:14px;gap:12px}
+@media(max-width:600px){.sol-more{margin-top:40px}.btn-xl{width:100%;padding:18px 24px;font-size:17px}}
 .btn-red{background:var(--red);color:#fff}
 .btn-red:hover{background:var(--red-deep)}
 .btn-ink{background:var(--ink);color:#fff}
@@ -142,7 +145,7 @@ img{max-width:100%;display:block}
 .nav.scrolled{background:rgba(255,255,255,.86);backdrop-filter:saturate(140%) blur(14px);
   border-bottom:1px solid var(--line);box-shadow:0 1px 30px rgba(0,0,0,.04)}
 .nav-inner{display:flex;align-items:center;justify-content:space-between;height:74px;max-width:var(--maxw);margin:0 auto;padding:0 28px}
-.brand{display:flex;align-items:center;gap:12px}
+.brand{display:flex;align-items:center;gap:12px;flex-shrink:0;white-space:nowrap}
 .brand img{height:38px;width:auto}
 .brand .mark-on-light{display:none}
 .nav.scrolled .brand .mark-on-dark{display:none}
@@ -164,6 +167,7 @@ img{max-width:100%;display:block}
 .nav .btn{padding:11px 20px;font-size:13.5px}
 .hamb{display:none;flex-direction:column;gap:5px;background:none;border:0;cursor:pointer;padding:8px}
 .hamb span{width:24px;height:2px;background:var(--ink);transition:.3s}
+.nav:not(.scrolled) .hamb span{background:#fff} /* nav is transparent over the dark hero until you scroll */
 .mobile-menu{position:fixed;inset:74px 0 auto 0;background:var(--paper);border-bottom:1px solid var(--line);
   z-index:99;transform:translateY(-120%);transition:transform .35s var(--ease);padding:18px 28px 26px}
 .mobile-menu.open{transform:translateY(0)}
@@ -368,7 +372,7 @@ img{max-width:100%;display:block}
 .lang-mobile{display:flex;gap:8px;margin:6px 0 2px;border:0;background:none;padding:0}
 .lang-mobile button{flex:1;font-family:"Archivo",sans-serif;font-weight:700;font-size:14px;padding:11px 6px;border:1px solid var(--line);border-radius:10px;background:none;color:var(--slate);cursor:pointer;text-align:center;line-height:1.1}
 .lang-mobile button.active{background:var(--ink);color:#fff;border-color:var(--ink)}
-@media(max-width:980px){.nav-cta .lang{display:none}}
+@media(max-width:1180px){.nav-cta .lang{display:none}}
 #langVeil{position:fixed;inset:0;background:#0b0c0f;opacity:0;pointer-events:none;z-index:90;transition:opacity .32s ease}
 #langVeil.on{opacity:.95}
 .lang button,.lang-mobile button{transition:color .25s,background .25s,transform .25s}
@@ -413,10 +417,12 @@ img{max-width:100%;display:block}
 :focus-visible{outline:2.5px solid var(--red);outline-offset:3px;border-radius:3px}
 
 /* ---------- responsive ---------- */
-@media (max-width:980px){
+@media (max-width:1180px){
   .nav-links{display:none}
   .nav-cta .btn{display:none}
   .hamb{display:flex}
+}
+@media (max-width:980px){
   .hero{padding-top:120px}
   .hero-inner{grid-template-columns:1fr;gap:10px}
   .hero-copy{padding-bottom:20px}
@@ -753,6 +759,10 @@ img{max-width:100%;display:block}
       <div class="compare-row"><div class="c-param" data-i18n="cmp.quality">Power quality</div><div class="c-without"><span class="x">&#10005;</span> <span data-i18n="cmp.quality_no">Poor</span></div><div class="c-with"><span class="tick">&#10003;</span> <span data-i18n="cmp.quality_yes">Better</span></div></div>
       <div class="compare-row"><div class="c-param" data-i18n="cmp.penalty">Penalty charges</div><div class="c-without"><span class="x">&#10005;</span> <span data-i18n="cmp.penalty_no">Applicable</span></div><div class="c-with"><span class="tick">&#10003;</span> <span data-i18n="cmp.penalty_yes">Removed</span></div></div>
     </div>
+
+    <div class="sol-more reveal">
+      <a class="btn btn-red btn-xl" href="power-factor.html" data-i18n="sol.more">Learn More <span class="arrow">&rarr;</span></a>
+    </div>
   </div>
 </section>
 
@@ -1033,6 +1043,7 @@ img{max-width:100%;display:block}
     "cmp.life":"Kablo ve ekipman ömrü","cmp.life_no":"Daha kısa","cmp.life_yes":"Uzatılmış",
     "cmp.quality":"Güç kalitesi","cmp.quality_no":"Zayıf","cmp.quality_yes":"Daha iyi",
     "cmp.penalty":"Ceza bedelleri","cmp.penalty_no":"Uygulanır","cmp.penalty_yes":"Kaldırıldı",
+    "sol.more":"Daha Fazla Bilgi <span class='arrow'>&rarr;</span>",
     "prod.eyebrow":"Ürün","prod.h2":"Elektronik<br>Kondansatör Bankası.",
     "prod.p":"Konut ve ticari binalarda reaktif gücü düzelten kompakt, duvara monte bir ünite. Değişen yüklere hızlı tepki verir ve elle ayar gerektirmeden kararlı bir güç faktörü tutar.",
     "prod.b1":"Reaktif gücü azaltır","prod.b2":"Güç faktörünü iyileştirir","prod.b3":"Değişken yükler için hızlı tepki","prod.b4":"Kompakt duvara montaj tasarımı",
@@ -1089,6 +1100,7 @@ img{max-width:100%;display:block}
     "cmp.life":"عمر کابل و تجهیزات","cmp.life_no":"کوتاه‌تر","cmp.life_yes":"طولانی‌تر",
     "cmp.quality":"کیفیت توان","cmp.quality_no":"ضعیف","cmp.quality_yes":"بهتر",
     "cmp.penalty":"جریمه‌ها","cmp.penalty_no":"قابل‌اعمال","cmp.penalty_yes":"حذف‌شده",
+    "sol.more":"بیشتر بدانید <span class='arrow'>&larr;</span>",
     "prod.eyebrow":"محصول","prod.h2":"بانک خازنی<br>الکترونیکی.",
     "prod.p":"یک واحد جمع‌وجور و دیواری که توان راکتیو را برای ساختمان‌های مسکونی و تجاری اصلاح می‌کند. به تغییر بار به‌سرعت واکنش می‌دهد و بدون تنظیم دستی ضریب توان پایداری را حفظ می‌کند.",
     "prod.b1":"توان راکتیو را کاهش می‌دهد","prod.b2":"ضریب توان را بهبود می‌دهد","prod.b3":"واکنش سریع به بارهای متغیر","prod.b4":"طراحی جمع‌وجور دیواری",
